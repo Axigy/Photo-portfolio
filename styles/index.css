@@ -1,0 +1,29 @@
+:root {
+  --main-background-color: #202020;
+  --main-text-color: #fff;
+  --secondary-background-color: #282323;
+  --accent-text-color: #f65282;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+.wrapper {
+  padding: 30px;
+  background-image: url("/images/bg.png");
+  background-size: cover;
+  height: 900px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar img {
+  max-width: 150px;
+}
+.header {
+  text-align: center;
+}
