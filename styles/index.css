@@ -5,7 +5,9 @@
   --accent-text-color: #f65282;
 }
 
+html,
 body {
+  height: 100%;
   background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-family: "Roboto", sans-serif;
@@ -17,9 +19,13 @@ h2 {
 }
 
 .wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
 }
 .main-page {
+  flex: 1 1 auto;
   background-image: url("/images/bg.png");
   background-size: cover;
   background-position: 0 30%;
@@ -50,9 +56,16 @@ h2 {
 .navbar-links a:hover {
   text-decoration: underline;
 }
-.main-page .header {
+.header {
+  transform: translate(0px, 0%);
+  opacity: 1;
   text-align: center;
   margin: 10rem 0;
+  transition: all 0.8s ease-in-out;
+}
+.header._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .main-page .header h1 {
   font-size: 72px;
