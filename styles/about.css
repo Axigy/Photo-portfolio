@@ -42,7 +42,45 @@ h2 {
   font-weight: 700;
   text-decoration: underline;
 }
+.container-about {
+  padding: 0 0;
+  margin: 0 0;
+}
+.about-text {
+  padding: 50px 140px;
+}
+.about-text h3 {
+  color: var(--accent-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
 
+.about-photo img {
+  position: relative;
+  left: -10%;
+  top: -15%;
+  width: 120%;
+  height: 100%;
+}
+.action-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-background-color);
+  background-color: var(--main-text-color);
+  border-radius: 50px;
+  padding: 18px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 150ms ease-in-out;
+}
+
+.main-page .action-button:hover {
+  text-decoration: underline;
+  color: var(--secondary-background-color);
+}
 .footer-container {
   width: 100%;
   padding: 2.375em 8.75em;
