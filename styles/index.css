@@ -81,7 +81,7 @@ h2 {
 .main-collection {
   position: relative;
   z-index: 2;
-  padding: 30px;
+  padding: 30px 30px 100px 30px;
 }
 .main-collection::before {
   content: "";
