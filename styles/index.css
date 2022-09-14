@@ -13,15 +13,22 @@ body {
 h1,
 h2 {
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .wrapper {
   padding: 30px;
+}
+.main-page {
   background-image: url("/images/bg.png");
   background-size: cover;
+  background-position: 0 30%;
   height: 900px;
+  background-attachment: fixed;
 }
+
 .navbar {
+  margin: 1.125rem 8.75rem;
   display: flex;
   justify-content: space-between;
 }
@@ -29,14 +36,31 @@ h2 {
 .navbar img {
   max-width: 150px;
 }
-.header {
+.navbar-links a {
+  margin-left: 28px;
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: all 150ms ease-in;
+}
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+.main-page .header {
   text-align: center;
+  margin: 10rem 0;
 }
-
-.header p {
-  max-width: 460px;
+.main-page .header h1 {
+  font-size: 72px;
+  margin: 25px 0;
 }
-.action-button {
+.main-page .header h2 {
+  font-size: 24px;
+}
+.main-page .header-text {
+  margin: 0 auto 48px;
+  max-width: 480px;
+}
+.main-page .action-button {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--main-background-color);
@@ -44,4 +68,27 @@ h2 {
   border-radius: 50px;
   padding: 18px 40px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 150ms ease-in-out;
+}
+
+.main-page .action-button:hover {
+  text-decoration: underline;
+  color: var(--secondary-background-color);
+}
+
+.main-collection {
+  padding: 30px;
+}
+
+@media (max-aspect-ratio: 3/2) {
+  .main-page {
+    background-position: 30% 30%;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 0;
+  }
 }
