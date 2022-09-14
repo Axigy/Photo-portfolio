@@ -47,7 +47,7 @@ h2 {
   font-size: 72px;
   margin: 25px 0;
   text-align: center;
-  margin: 10rem 0;
+  margin: 32px 0 160px;
 }
 
 .main-collection {
@@ -59,7 +59,7 @@ h2 {
   width: 100%;
 }
 .portfolio-photo {
-  height: 280px;
+  height: 300px;
   width: 100%;
 }
 .footer-container {
@@ -101,7 +101,7 @@ h2 {
     margin: 1rem 0 1rem;
   }
 
-  .main-page .header h1 {
+  .main-page .header {
     font-size: 48px;
   }
   .portfolio-photo {
@@ -113,8 +113,6 @@ h2 {
     padding: 1em 1.5em;
   }
   .main-collection {
-    position: relative;
-    z-index: 2;
     padding: 8px;
   }
 }
