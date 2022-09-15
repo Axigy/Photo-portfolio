@@ -1,3 +1,83 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
 :root {
   --main-background-color: #202020;
   --main-text-color: #fff;
@@ -5,11 +85,6 @@
   --accent-text-color: #f65282;
 }
 
-body {
-  background-color: var(--main-background-color);
-  color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
-}
 h1,
 h2 {
   text-transform: uppercase;
@@ -45,13 +120,12 @@ h2 {
 }
 .header {
   font-size: 72px;
-  margin: 25px 0;
+  margin: 40px 0;
   text-align: center;
-  margin: 32px 0 160px;
 }
 
 .main-collection {
-  padding: 30px 0px 100px 30px;
+  padding: 30px 0px;
 }
 
 .photo-row {
@@ -92,17 +166,19 @@ h2 {
 }
 @media (max-width: 900px) {
   .wrapper {
-    padding: 0 0;
-    margin: 0 0;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
   }
   .navbar {
     display: flex;
-    justify-content: center;
-    margin: 1rem 0 1rem;
+    justify-content: left;
+    margin: 16px 0px 16px;
   }
 
-  .main-page .header {
-    font-size: 48px;
+  .header {
+    font-size: 32px;
+    margin: 32px auto;
   }
   .portfolio-photo {
     height: 100%;
